@@ -9,6 +9,7 @@ I recommend using it over the original HippieStation repository.
 - Copy the following file into your repository [merge-upstream-pull-request.sh](https://github.com/HippieStation/HippieStation/blob/master/hippiestation/tools/merge-upstream-pull-request.sh)
 - Make sure that `merge-upstream-pull-request.sh` is marked as executable (`chmod +x merge-upstream-pull-request.sh`)
 - Clone the repo to disk
+- Install jq, a command-line JSON processor, if you don't already have it
 - Make sure that you can push new commits back to the repository from the cloned directory, IE: Setup SSH keys or Github Username/Password
 - Run the program to generate a blank config
   - GitHubToken should be a [GitHub Access Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)

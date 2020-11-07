@@ -50,7 +50,7 @@ func main() {
 	tc := oauth2.NewClient(ctx, ts)
 
 	client := github.NewClient(tc)
-	client.UserAgent = "austation/PRMirror"
+	client.UserAgent = "Mojave-Sun/PRMirror"
 
 	PRMirrorer = PRMirror{
 		GitHubClient:  client,
