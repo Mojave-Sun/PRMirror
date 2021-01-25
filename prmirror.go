@@ -97,7 +97,7 @@ func (p PRMirror) HandlePREvent(prEvent *github.PullRequestEvent) {
 			log.Errorf("Error while creating a new PR: %s\n", err.Error())
 		} else {
 			if p.Configuration.AddLabel {
-				p.AddLabels(prID, []string{"Mirror"})
+				p.AddLabels(prID, []string{"mirror"})
 			}
 			p.Database.StoreMirror(prID, prEvent.PullRequest.GetNumber())
 		}
